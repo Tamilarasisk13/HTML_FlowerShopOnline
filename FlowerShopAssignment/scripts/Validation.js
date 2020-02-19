@@ -15,12 +15,12 @@ function ValidateDetails() {
     ValidateEmail();
     if (flag == true) {
         alert("Successfull");
-        location.replace("PaymentPageOnline.aspx");
+        location.replace("Index.html");
     }
 
 
 }
-function ValidateCardNumber() {
+function ValidateCardNumber() {                 // Validate card number
     var regex = /^(?:4[0-9]{12}(?:[0-9]{3})?)$/;
     if (document.getElementById("cardNumber").value.trim() == "") {
         document.getElementById("requiredcardNumber").style.display = "inline";
@@ -37,7 +37,7 @@ function ValidateCardNumber() {
     }
 }
 
-function ValidateSecurityCode() {
+function ValidateSecurityCode() {          // Validate Security code
     var regex1 = /^[0-9]{3}$/;
     if (document.getElementById("securityCode").value.trim() == "") {
         document.getElementById("requiredsecurityCode").style.display = "inline";
@@ -53,7 +53,7 @@ function ValidateSecurityCode() {
         document.getElementById("requiredsecurityCode").style.display = "none";
     }
 }
-function ValidateExpiryDate() {
+function ValidateExpiryDate() {                   //Validate Expiry date
     var x = document.getElementById("month").selectedIndex;
     var y = document.getElementById("year").selectedIndex;
     if ((x == "") || (y == "")) {
@@ -65,7 +65,7 @@ function ValidateExpiryDate() {
     }
 }
 
-function ValidateName() {
+function ValidateName() {              // Validate Name
     var x = document.getElementById("cardHolderName").value;
     var regex2 = /^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/;
     if (x.trim() == "") {
@@ -83,7 +83,7 @@ function ValidateName() {
     }
 }
 
-function ValidateAddress1() {
+function ValidateAddress1() {                    // Validate Address1
     var regex4 = /^[a-zA-Z0-9\s,.'-]{3,}$/;
     if (document.getElementById("Address1").value.trim() == "") {
         document.getElementById("requiredAddress1").style.display = "inline";
@@ -102,7 +102,7 @@ function ValidateAddress1() {
 
 }
 
-function ValidateAddress2() {
+function ValidateAddress2() {                              // Validate Address2
     var regex4 = /^[a-zA-Z0-9\s,.'-]{3,}$/;
     if (document.getElementById("Address2").value.trim() == "") {
         document.getElementById("ValidAddress2").style.display = "none";
@@ -118,7 +118,7 @@ function ValidateAddress2() {
         document.getElementById("ValidAddress2").style.display = "none";
     }
 }
-function ValidateAddress3() {
+function ValidateAddress3() {                           // Validate Address3
     var regex4 = /^[a-zA-Z0-9\s,.'-]{3,}$/;
     if (document.getElementById("Address3").value.trim() == "") {
         document.getElementById("ValidAddress3").style.display = "none";
@@ -132,7 +132,7 @@ function ValidateAddress3() {
         document.getElementById("ValidAddress3").style.display = "none";
     }
 }
-function ValidateCity() {
+function ValidateCity() {                      // Validate city
     var regex8 = /^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/;
     if (document.getElementById("place").value.trim() == "") {
         document.getElementById("requiredplace").style.display = "inline";
@@ -149,7 +149,7 @@ function ValidateCity() {
     }
 }
 
-function ValidateRegion() {
+function ValidateRegion() {                        // Validate region
     var regex8 = /^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/;
     if (document.getElementById("region").value.trim() == "") {
         document.getElementById("Validregion").style.display = "none";
@@ -166,7 +166,7 @@ function ValidateRegion() {
 }
 
 
-function ValidatePostCode() {
+function ValidatePostCode() {                     // Validate post code
     var regex3 = /^(\d{4}|\d{6})$/;
     if (document.getElementById("code").value.trim() == "") {
         document.getElementById("requiredcode").style.display = "inline";
@@ -184,7 +184,7 @@ function ValidatePostCode() {
     }
 }
 
-function ValidatePhoneNumber() {
+function ValidatePhoneNumber() {                //Validate Phone number
     var regex5 = /^[7-9][0-9]{9}$/;
     if (document.getElementById("telephone").value.trim() == "") {
         document.getElementById("Validtelephone").style.display = "none";  
@@ -198,7 +198,7 @@ function ValidatePhoneNumber() {
     }
 }
 
-function ValidateFax() {
+function ValidateFax() {                          // Validate Fax
  
     var regex7 = /[\+? *[1-9]+]?[0-9 ]+/;
     if (document.getElementById("Fax").value.trim() == "") {
@@ -213,7 +213,7 @@ function ValidateFax() {
         document.getElementById("ValidFax").style.display = "none";
     }
 }
-function ValidateEmail() {
+function ValidateEmail() {                           // Validate Email
     
     var regex6 = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
     if (document.getElementById("email").value.trim() == "") {
@@ -231,4 +231,15 @@ function ValidateEmail() {
     }
 }
 
+function Cancel()
+{
+    alert("Page cancelled");
+location.replace("Index.html");
+}
+
+function Reload()
+{
+    alert("Page Reloaded");
+location.replace("Index.html");
+}
 
