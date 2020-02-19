@@ -1,0 +1,168 @@
+
+.top {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    border: groove;
+}
+
+.startbutton {
+    text-decoration: none;
+       
+}
+
+.securecolour {
+    color: darkslateblue;
+}
+
+.worldpayline {
+   padding-left: 140px;
+    padding-top: 20px;
+    color:#223850;
+}
+.worldpageimg{
+      padding-left: 15px;
+    padding-bottom: 30px;
+}
+.headline {
+    font-family: Arial;
+    color: darkslateblue;
+}
+
+.worldpayimg {
+    height: 80px;
+    width: 80px;
+    margin-left: 225px;
+}
+
+.flowerpage {
+    float: left;
+    width: 30%;
+}
+
+.line {
+    background-color: yellowgreen;
+    height: 25px;
+}
+
+.head {
+    padding-left: 227px;
+}
+
+.page {
+    margin-left: 1200px;
+}
+
+.card {
+    background-color: yellowgreen;
+    height: 25px;
+}
+
+.questionmark {
+    height: 30px;
+    width: 30px;
+
+    /*float:right;*/
+}
+.questionmark1{
+    height: 30px;
+    width: 30px;
+    /*float:right;*/
+    margin-top:120px;
+}
+.questiondiv{
+    float:right;
+    display:flex;
+}
+
+.paymentimg {
+    width: 20px;
+    height: 20px;
+    padding-left:10px;
+    padding-top:10px;
+}
+.payment {
+    padding-left: 190px;
+}
+.required {
+    background-color: lightsalmon;
+    text-align: left;
+}
+
+.carddetails {
+    background-color: #fccc9e;
+}
+
+.flower {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.visa {
+    margin-left: 220px;
+    margin-top: 40px;
+    width: 60px;
+    height: 60px;
+    border:1px groove;
+ 
+}
+
+.refresh {
+    height: 15px;
+    width: 15px;
+}
+
+.cancel {
+    height: 15px;
+    width: 15px;
+}
+
+.auto-style1 {
+    background-color: yellowgreen;
+    height: 25px;
+    width: 510px;
+}
+
+
+
+.auto1 {
+    margin-left: 218px;
+}
+
+.capital {
+    margin-left: 600px;
+    text-transform: uppercase;
+}
+
+.lastline {
+    margin-left: 230px;
+    height: 8px;
+    background-color: olivedrab;
+}
+
+.sentence {
+    background-color: yellowgreen;
+    height: 45px;
+    text-align: center;
+    padding-top: 1px;
+    padding-bottom: 16px;
+}
+
+.endline {
+    margin-top: 8px;
+    background-color: black;
+    height: 1px;
+}
+
+.linecolour {
+    color: steelblue;
+}
+.alignpage{
+    margin-left:10px;
+}
+.firsttable{
+    width:50%;
+}
+.endpage{
+    padding-left:250px;
+}

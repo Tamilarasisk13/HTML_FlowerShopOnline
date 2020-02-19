@@ -1,0 +1,308 @@
+
+
+<head >
+    <title></title>
+        <link rel="stylesheet" type="text/css" href="C:\Users\Tamilarasi\Documents\FlowerShopAssignment\styles\StyleSheet.css" />
+    <script src="C:\Users\Tamilarasi\Documents\FlowerShopAssignment\scripts\Validation.js" ></script>
+</head>
+<body>
+    <form id="form1" >
+      <div class="top">   
+            <div class="headline">
+            <h2>FLOWER SHOP ONLINE
+            </h2>
+        </div>
+      <div class="line"></div>
+      <div style="display:flex"> 
+           <div class="flowerpage">
+           <img src="images\Annotation 2020-02-13 120502.png" class="flower"/>
+       </div>
+           <div class="alignpage">          
+                    <h2 class="securecolour">Secure Payment Page</h2>
+        <table>      
+            <tr>
+                <td>
+                    <label>Select Language:</label>
+                </td>
+                <td>
+                    <select id="Language">
+                        <option value="English">English</option>
+                        <option value="Tamil">Tamil</option>
+                        <option value="Hindi">Hindi</option>
+                        <option value="Kanada">Kanada</option>
+                    </select>
+                </td>
+                <td rowspan="4" >
+                    <img src="images\Logo-Visa-2013.jpg" class="visa" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Payment Method
+                </td>
+                <td>
+                    <b>Visa </b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                  Description  
+                </td>
+                <td>
+                    <b>Item Ordered </b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                   Amonut 
+                </td>
+                <td>
+                    <b>&euro;100.00</b>
+                </td>
+            </tr>
+        </table>
+
+        <div style="display:flex;">
+            <div >
+             <table class="carddetails"> 
+                 <tr>
+                    <td colspan="2" class="auto-style1">Card details</td>
+                </tr>
+                <tr>
+                    <td colspan="2">You must fil in fields marked with*</td>
+                </tr>
+                <tr>
+                    <td class="auto">
+                        <label="cardNumber">*Card number</label>
+                    </td>
+                    <td >
+                        <input type="text" id="cardNumber" name="cardNumbername" maxlength="16" size="30" />
+                        <label id="ValidcardNumber" style="display:none;color:red;">  Invalid
+                          </label>
+                          <label id="requiredcardNumber" style="display:none;color:red;"> Required</label>
+                            
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="securityCode"><u>*Security code</u></label>
+                    </td>
+                    <td>
+                        <input type="text" size="30"  maxlength="3" id="securityCode" name="securityCodename" />
+                                                <label id="ValidsecurityCode" style="display:none;color:red;">
+                              Invalid
+                          </label>
+                          <label id="requiredsecurityCode" style="display:none;color:red;"> Required</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>*Expity date</label>
+                    </td>
+                    <td class="date">
+                        <select id="month">   
+                             <option></option>
+                             <option> Jan </option>               
+                       
+                            </select>
+                   &nbsp
+                        <select id="year" >
+                                <option > </option>
+                        <option >2010 </option>
+                       </select>
+                        
+                          <label id="requireddate" style="display:none;color:red;"> Required</label>
+                         
+                    </td>
+
+                    
+                </tr>
+                <tr>
+                    <td >
+                        <label>*Cardholder's name</label>
+                    </td>
+                    <td>
+                        <input type="text" id="cardHolderName" name="cardHolderName" size="30" maxlength="40" />
+                        <label id="ValidcardHolderName" style="display:none;color:red;">
+                              Invalid
+                          </label>
+                          <label id="requiredcardHolderName" style="display:none;color:red;"> Required</label>
+                    </td>
+                </tr>   
+                 <tr>
+                     <td colspan="2" class="auto-style1">Cardholder details</td>
+                 </tr>    
+                 <tr>
+                     <td colspan="2">You must fil in fields marked with*</td>
+                 </tr>
+           <tr>
+                    <td >
+                        <label for="Address1">*Address 1</label>
+                    </td>
+                    <td>
+                        <input type="text" id="Address1" name="Address1" size="30" maxlength="60" />
+                          <label id="ValidAddress1" style="display:none;color:red;">
+                              Invalid
+                          </label>
+                          <label id="requiredAddress1" style="display:none;color:red;"> Required</label>
+                    </td>
+                </tr>
+                      <tr>
+                    <td >
+                        <label for="Address2">Address 2</label>
+                    </td>
+                    <td>
+                        <input type="text" id="Address2" name="Address2" size="30"  maxlength="60"  />
+                          <label id="ValidAddress2" style="display:none;color:red;">
+                              Invalid
+                          </label>
+                           <label id="requriedAddress2" style="display:none;color:red;">
+                             Requried
+                          </label>
+                    </td>
+                </tr>
+                   <tr>
+                    <td >
+                        <label for="Address3">Address 3</label>
+                    </td>
+                    <td>
+                        <input type="text" id="Address3" name="Address2" size="30"  maxlength="60" />
+                          <label id="ValidAddress3" style="display:none;color:red;">
+                              Invalid
+                          </label>
+                            <label id="requriedAddress3" style="display:none;color:red;">
+                             Requried
+                          </label>
+                    </td>
+                </tr>
+             <tr>
+                    <td >
+                        <label>*Town/City</label>
+                    </td>
+                    <td>
+                        <input type="text" id="place" name="place" size="30" maxlength="20" />
+                         <label id="Validplace" style="display:none;color:red;">
+                              Invalid
+                          </label>
+                          <label id="requiredplace" style="display:none;color:red;"> Required</label>
+                    </td>
+                </tr>
+             <tr>
+                    <td>
+                        <label>Region</label>
+                    </td>
+                    <td>
+                        <input type="text" id="region" name="Region" size="30"  maxlength="20" />
+                         <label id="Validregion" style="display:none;color:red;">
+                              Invalid
+                          </label>
+                          
+                    </td>
+                </tr>
+             <tr>
+                    <td >
+                        <label >*Postcode/Zipcode</label>
+                    </td>
+                    <td>
+                        <input type="text" id="code" name="code" size="30" maxlength="10" />
+                         <label id="Validcode" style="display:none;color:red;">
+                              Invalid
+                          </label>
+                          <label id="requiredcode" style="display:none;color:red;"> Required</label>
+                    </td>
+                </tr>
+             <tr>
+                <td>
+                    <label>*Country</label>
+                </td>
+                <td>
+                    <select id="Country">
+                        <option value="United Kingdom          ">United Kingdom</option>
+                        <option value="India">India</option>                     
+                    </select>
+                </td>
+            </tr>
+              <tr>
+                    <td><label>Telephone</label>
+                    </td>
+                    <td>
+                        <input type="text" id="telephone" name="Telephone" size="30" maxlength="10"   />
+                         <label id="Validtelephone" style="display:none;color:red;">
+                              Invalid
+                          </label>
+                          
+                    </td>
+                </tr>
+          <tr>
+                    <td >
+                        <label >Fax</label>
+                    </td>
+                    <td>
+                        <input type="text" id="Fax" name="Fax" size="30"  maxlength="13"  />
+                        <label id="ValidFax" style="display:none;color:red;">
+                              Invalid
+                          </label>
+                          
+                    </td>
+                </tr>
+             <tr>
+                    <td >
+                        <label for="email">*Email Address</label>
+                    </td>
+                    <td>
+                        <input type="text" id="email" name="*Email Address" size="30" maxlength="40" />
+                        <label id="Validemail" style="display:none;color:red;">
+                              Invalid
+                          </label>
+                           <label id="requiredemail" style="display:none;color:red;">
+                              Requried
+                          </label>
+                    </td>
+                </tr>
+        </table>
+                <table style="background-color:white;">
+                    <tr>
+    <td style="width:130px">   <img src="images\refresh_image.png" class="refresh"/> <a href="#"
+" class="startbutton" onclick="document.location='PaymentPageOnline.aspx'" >  START AGAIN</a></td>
+
+       <td rowspan="2" class="payment" > <button type="button" id="btnid" onclick="ValidateDetails()" style="border:none; background:none">
+      MAKE PAYMENT   </button><img src="images\gg.png" class="paymentimg"/>
+      </td>
+  </tr>
+  <tr>
+    <td> <img src="images\cancel_image.png" class="cancel"/><a href="#"
+" class="startbutton" onclick="document.location='PaymentPageOnline.aspx'"> CANCEL</a></td>
+  </tr>
+                </table>
+        </div> 
+            <div>
+                <img src="images\gg1.png" class="questionmark" />
+                <img src="images\gg1.png" class="questionmark1" />
+            </div>
+            </div>
+        </div>
+    </div>
+           <div class="endpage">
+               <div>
+               <div class="endline">&nbsp;</div>
+        <div class="linecolour">
+            Refunds and Returns<br />
+          For more information visit our <u> Refunds and Returns Policy</u>&nbsp;
+        </div>
+               </div>
+               </div>               
+          <div style="display:flex" >
+              <div class="worldpageimg">
+                  <img src="images\smallworldpay.gif" class="worldpayimg" />
+              </div>
+                 <div class="worldpayline">
+              For help with your payment visit the <u> WorldPay Help</u>
+          </div>
+          </div>     
+        <div class="sentence">
+         <h2>Thank you for your shopping at Flowershop. Have a nice day </h2> 
+        </div> 
+          </div>                    
+    </form>
+</body>
+
